@@ -1,0 +1,29 @@
+{
+  "name": "luo-yudan",
+  "version": "0.1.0",
+  "description": "基于同义千问大模型开发的 QQ 机器人，使用 TyptScript 编写。",
+  "main": "src/app.ts",
+  "type": "module",
+  "scripts": {
+    "dev": "npx tsc && cd build/src && node app.js",
+    "build": "rm -rf build && npx tsc && cd build/src && node app.js"
+  },
+  "author": "HaiPaya <haipaya@aliyun.com>",
+  "bugs": "https://github.com/PayaHai/Luo-Yudan/issues",
+  "homepage": "https://github.com/PayaHai/Luo-Yudan",
+  "license": "GPL-3.0",
+  "repository": "github:PayaHai/Luo-Yudan",
+  "dependencies": {
+    "nodemailer": "^6.9.14",
+    "openai": "^4.54.0",
+    "redis": "^4.7.0",
+    "uuid": "^10.0.0",
+    "ws": "^8.18.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.12",
+    "@types/nodemailer": "^6.4.15",
+    "@types/uuid": "^10.0.0",
+    "@types/ws": "^8.5.12"
+  }
+}
